@@ -3,7 +3,7 @@ A JavaScript utility for efficiently managing browser cookies and decoding JWTs 
 
 ## Usage  
 
-import library 
+Import library 
 ```javascript
 import cookie from '@sswahn/cookie'
 ```
