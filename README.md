@@ -37,7 +37,7 @@ cookie.remove('name')
 To decode a JWT:  
 
 ```javascript
-const payload = cookie.decode('JWTtoken')
+const payload = cookie.decode(token)
 ```
 **Note:** The decode method is for data extraction and does not verify the JWT's signature. Always verify JWTs in a secure environment if used for authentication or security contexts.
 
