@@ -29,7 +29,7 @@ cookie.set('name', value, expiration)
 To remove a cookie:  
 
 ```javascript
-cookie.remove('cookieName')
+cookie.remove('name')
 ```
 
 ### Decode Token  
