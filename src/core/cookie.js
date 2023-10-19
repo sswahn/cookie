@@ -2,10 +2,17 @@ const cookie = () => {
   return {
     get(name) {
       try {
-        const cookieValue = document.cookie.split(';').find(row => row.trim().startsWith(`${name}=`))
-        return cookieValue ? cookieValue.split('=')[1] : undefined
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+          const [cookieName, ...cookieValueParts] = cookie.trim().split('=');
+          const cookieValue = cookieValueParts.join('=');
+          if (cookieName === name) {
+            return cookieValue;
+          }
+        }
+        return undefined; // Return undefined if the cookie is not found
       } catch (error) {
-        throw new Error(`Error getting cookie: ${name}`)
+        throw new Error(`Error getting cookie: ${name}`);
       }
     },
     set(name, value, expiration = undefined) {
