@@ -1,4 +1,4 @@
-const Cookie = () => {
+const cookie = () => {
   return {
     get(name) {
       try {
@@ -46,4 +46,4 @@ const Cookie = () => {
   }
 }
 
-export default Cookie()
+export default cookie()
