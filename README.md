@@ -1,5 +1,5 @@
 # Cookie
-A JavaScript utility for efficiently managing browser cookies and decoding JWTs (JSON Web Tokens).
+A JavaScript utility for efficiently managing browser cookies.
 
 ## Usage  
 
