@@ -1,18 +1,21 @@
 const cookie = () => {
   return {
     get(name) {
+      if (typeof name !== 'string') {
+        throw new Error('Get cookie first argument must be of type string.')
+      }
       try {
-        const cookies = document.cookie.split(';');
+        const cookies = document.cookie.split(';')
         for (let cookie of cookies) {
-          const [cookieName, ...cookieValueParts] = cookie.trim().split('=');
-          const cookieValue = cookieValueParts.join('=');
+          const [cookieName, ...cookieValueParts] = cookie.trim().split('=')
+          const cookieValue = cookieValueParts.join('=')
           if (cookieName === name) {
-            return cookieValue;
+            return cookieValue
           }
         }
-        return undefined; // Return undefined if the cookie is not found
+        return undefined 
       } catch (error) {
-        throw new Error(`Error getting cookie: ${name}`);
+        throw new Error(`Error getting cookie: ${name}`)
       }
     },
     set(name, value, expiration = undefined) {
@@ -37,18 +40,10 @@ const cookie = () => {
       document.cookie = Object.values(settings).join('')
     },
     remove(name) {
-      document.cookie = `${name}=;max-age=0;path=/;samesite=strict;secure`
-    },
-    decode(token) {
-      try {
-        const tokenParts = token.split('.')
-        if (tokenParts.length !== 3) {
-          throw new Error('Invalid JWT structure.')
-        }
-        return JSON.parse(atob(tokenParts[1]))
-      } catch (error) {
-        throw new Error(`Error decoding token. Tokens must be JWT format with a JSON payload.`)
+      if (typeof name !== 'string') {
+        throw new Error('Remove cookie argument must be of type string.')
       }
+      document.cookie = `${name}=;max-age=0;path=/;samesite=strict;secure`
     }
   }
 }
