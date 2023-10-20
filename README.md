@@ -18,7 +18,7 @@ const token = cookie.get('name')
 
 ### Set Cookie  
 
-To set a cookie:  
+To set a cookie, (with optional expiration argument - a numeric value representing seconds):  
 
 ```javascript
 cookie.set('name', value, expiration)
