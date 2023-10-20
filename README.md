@@ -33,4 +33,4 @@ cookie.remove('name')
 ```
 
 ## Licence
-Server is [MIT Licensed](https://github.com/sswahn/server/blob/main/LICENSE)
+Cookie is [MIT Licensed](https://github.com/sswahn/cookie/blob/main/LICENSE)
