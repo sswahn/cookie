@@ -32,14 +32,5 @@ To remove a cookie:
 cookie.remove('name')
 ```
 
-### Decode Token  
-
-To decode a JWT:  
-
-```javascript
-const payload = cookie.decode(token)
-```
-**Note:** The decode method is for data extraction and does not verify the JWT's signature. Always verify JWTs in a secure environment if used for authentication or security contexts.
-
 ## Licence
 Server is [MIT Licensed](https://github.com/sswahn/server/blob/main/LICENSE)
