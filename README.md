@@ -32,5 +32,5 @@ To remove a cookie:
 cookie.remove('name')
 ```
 
-## Licence
+## License
 Cookie is [MIT Licensed](https://github.com/sswahn/cookie/blob/main/LICENSE)
