@@ -4,13 +4,14 @@ A JavaScript utility for efficiently managing browser cookies.
 ## Usage  
 
 Import library.  
+
 ```javascript
 import cookie from '@sswahn/cookie'
 ```
 
 ### Get Cookie  
 
-To retrieve a cookie by name.  
+Retrieve a cookie by name.  
 
 ```javascript
 const token = cookie.get('name')
@@ -18,15 +19,15 @@ const token = cookie.get('name')
 
 ### Set Cookie  
 
-To set a cookie, with optional expiration argument (a numeric value representing the lifetime of the cookie in seconds).  
+Set a cookie, with optional expiration argument (a numeric value representing the lifetime of the cookie in seconds).  
 
 ```javascript
 cookie.set('name', value, expiration)
 ```
 
-### Remove A Cookie  
+### Remove Cookie  
 
-To remove a cookie.  
+Remove a cookie.  
 
 ```javascript
 cookie.remove('name')
