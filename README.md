@@ -2,9 +2,9 @@
 A lightweight, easy-to-use utility for efficiently managing cookies in a web browser.  
 
 ## Features
-- Get Cookie: Retrieve the value of a cookie.
-- Set Cookie: Set a cookie with optional attributes.
-- Remove Cookie: Easily delete a cookie.  
+- **Get Cookie**: Retrieve the value of a cookie.
+- **Set Cookie**: Set a cookie with optional attributes.
+- **Remove Cookie**: Easily delete a cookie.  
 
 ## Installation
 Using npm.
