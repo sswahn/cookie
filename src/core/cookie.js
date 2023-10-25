@@ -3,19 +3,15 @@ const cookie = {
     if (typeof name !== 'string') {
       throw new Error('Get cookie first argument must be of type string.')
     }
-    try {
-      const cookies = document.cookie.split(';')
-      for (let cookie of cookies) {
-        const [cookieName, ...cookieValueParts] = cookie.trim().split('=')
-        const cookieValue = cookieValueParts.join('=')
-        if (cookieName === name) {
-          return cookieValue
-        }
+    const cookies = document.cookie.split(';')
+    for (let cookie of cookies) {
+      const [cookieName, ...cookieValueParts] = cookie.trim().split('=')
+      const cookieValue = cookieValueParts.join('=')
+      if (cookieName === name) {
+        return cookieValue
       }
-      return undefined 
-    } catch (error) {
-      throw new Error(`Error getting cookie: ${name}`)
     }
+    return undefined 
   },
   set(name, value, expiration = undefined) {
     if (typeof name !== 'string') {
