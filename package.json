@@ -6,7 +6,8 @@
   "type": "module",
   "main": "src/index.js",
   "keywords": [
-    "cookie"
+    "cookie",
+    "utility"
   ],
   "repository": {
     "type": "git",
