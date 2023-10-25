@@ -11,13 +11,12 @@ const cookie = {
         return cookieValue
       }
     }
-    return undefined 
   },
   set(name, value, expiration = undefined) {
     if (typeof name !== 'string') {
       throw new Error('Set cookie first argument must be of type string.')
     }
-    if (!value) {
+    if (value === undefined || value == null) {
       throw new Error('Set cookie must have second argument.')
     }
     if (expiration && typeof expiration !== 'number') {
