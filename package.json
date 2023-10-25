@@ -2,7 +2,7 @@
   "name": "@sswahn/cookie",
   "version": "1.0.0-beta.3",
   "license": "MIT",
-  "description": "A JavaScript utility for efficiently managing browser cookies.",
+  "description": "A lightweight, easy-to-use utility for efficiently managing cookies in a web browser.",
   "type": "module",
   "main": "src/index.js",
   "keywords": [
