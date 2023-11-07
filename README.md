@@ -1,4 +1,4 @@
-# Cookie · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/cookie/blob/main/LICENSE)
+# Cookie · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/cookie/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/cookie) ![Weekly Downloads](https://img.shields.io/npm/dw/@sswahn/cookie)
 A lightweight, easy-to-use utility for efficiently managing cookies in a web browser.  
 
 ## Features
