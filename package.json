@@ -1,6 +1,6 @@
 {
   "name": "@sswahn/cookie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A lightweight, easy-to-use utility for efficiently managing cookies in a web browser.",
   "main": "src/index.js",
