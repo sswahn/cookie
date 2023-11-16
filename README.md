@@ -36,5 +36,10 @@ Remove a cookie.
 cookie.remove('name')
 ```
 
+## Related
+- [@sswahn/storage](https://www.npmjs.com/package/@sswahn/storage): A robust and easy-to-use utility for interacting with Web Storage API.
+- [@sswahn/database](https://www.npmjs.com/package/@sswahn/database): Easily interact with the IndexedDB API with a simplified, promise-based approach.
+- [@sswahn/cache](https://www.npmjs.com/package/@sswahn/cache): A robust caching utility that provides easy-to-use methods for interacting with the browser's Cache API.
+
 ## License
 Cookie is [MIT Licensed](https://github.com/sswahn/cookie/blob/main/LICENSE)
